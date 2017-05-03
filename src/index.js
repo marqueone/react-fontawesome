@@ -80,7 +80,7 @@ class FontAwesome extends React.Component {
     return React.createElement(
       tag,
       { ...props, 'aria-hidden': true, className: classNames.join(' ') },
-      ariaLabel ? React.createElement('span', { style: srOnlyStyle }, ariaLabel) : null,
+      ariaLabel ? React.createElement('span', { style: srOnlyStyle }, ariaLabel) : props.children,
     )
   }
 }
